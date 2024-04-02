@@ -60,9 +60,22 @@ namespace Actividad.DAL
         }
         public DataTable ClienteDatosDal(int id)
         {
-            string consulta = " SELECT SUM(TOTAL) AS TotalPedidos FROM PEDIDO WHERE IDCLIENTE =" + id;
+            string consulta = " SELECT COUNT(*) AS TotalPedidos FROM PEDIDO WHERE IDCLIENTE = " + id;
 
-            conexion.Ejecutar(consulta);
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
+        }
+        public DataTable ClienteDatosDal2(int id)
+        {
+            string consulta = " SELECT * FROM PEDIDO WHERE IDCLIENTE = " + id; 
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
+        }
+        public DataTable ClienteDatosDal3(int id)
+        {
+            string consulta = " SELECT SUM(TOTAL) AS TotalMontosPedidos FROM PEDIDO WHERE IDCLIENTE = " + id; 
+
             return conexion.EjecutarDataTabla(consulta, "fsdf");
 
         }

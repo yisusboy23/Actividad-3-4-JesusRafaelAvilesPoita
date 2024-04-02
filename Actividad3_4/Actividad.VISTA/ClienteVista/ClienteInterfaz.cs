@@ -78,9 +78,12 @@ namespace Actividad.VISTA.ClienteVista
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int IdPersonaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
-            ClienteDatos fr = new ClienteDatos(IdPersonaSeleccionada);
-            bss.ClienteDatosBSS(IdPersonaSeleccionada);
+            int IdClienteSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            ClienteDatos fr = new ClienteDatos(IdClienteSeleccionada);
+            fr.ShowDialog();
+            bss.ClienteDatosBSS(IdClienteSeleccionada);
+            bss.ClienteDatosBSS2(IdClienteSeleccionada);
+            bss.ClienteDatosBSS3(IdClienteSeleccionada);
         }
     }
 }

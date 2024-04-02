@@ -38,5 +38,13 @@ namespace Actividad.BSS
         {
             return dal.ClienteDatosDal(id);
         }
+        public DataTable ClienteDatosBSS2(int id)
+        {
+            return dal.ClienteDatosDal2(id);
+        }
+        public DataTable ClienteDatosBSS3(int id)
+        {
+            return dal.ClienteDatosDal3(id);
+        }
     }
 }

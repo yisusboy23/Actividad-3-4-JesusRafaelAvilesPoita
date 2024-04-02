@@ -25,6 +25,8 @@ namespace Actividad.VISTA.ClienteVista
         private void ClienteDatos_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.ClienteDatosBSS(idx);
+            dataGridView2.DataSource = bss.ClienteDatosBSS2(idx);
+            dataGridView3.DataSource = bss.ClienteDatosBSS3(idx);
         }
     }
 }

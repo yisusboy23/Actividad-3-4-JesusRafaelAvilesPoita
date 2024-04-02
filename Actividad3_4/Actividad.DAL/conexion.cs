@@ -13,7 +13,7 @@ namespace SistemasVentas.DAL
 
         public static string CONECTAR
         {
-            get { return @"Data Source=DESKTOP-JDKQ9F6\SQLEXPRESS; Initial Catalog=PRACTICA; Integrated Security=True; TrustServerCertificate=true;"; }
+            get { return @"Data Source=PCA-03; Initial Catalog=PRACTICA; Integrated Security=True; TrustServerCertificate=true;"; }
             //get { return ConfigurationManager.ConnectionStrings["cadena"].ToString(); }
         }
         public static DataSet EjecutarDataSet(string consulta)
