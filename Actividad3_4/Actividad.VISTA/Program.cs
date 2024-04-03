@@ -11,7 +11,7 @@ namespace Actividad.VISTA
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new ClienteVista.ClienteInterfaz());
+            Application.Run(new PedidoVista.PedidoInterfaz());
         }
     }
 }
